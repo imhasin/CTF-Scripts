@@ -12,5 +12,9 @@ def GetFile(file):
     for match in matches:
         print(b64decode(match).decode('utf-8'))
 
-file = input("The file: ")
-GetFile(file)
+while True:
+    try:    
+        file = input("The file: ")
+        GetFile(file)
+    except:
+        continue
