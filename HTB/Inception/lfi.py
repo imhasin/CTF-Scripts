@@ -13,8 +13,9 @@ def GetFile(file):
         print(b64decode(match).decode('utf-8'))
 
 while True:
-    try:    
+    try:
         file = input("The file: ")
         GetFile(file)
-    except:
-        continue
+    except KeyboardInterrupt:
+        print("    Exiting")
+        break
