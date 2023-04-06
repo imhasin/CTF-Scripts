@@ -1,7 +1,5 @@
 import datetime
 import requests
-import PyPDF2
-import io
 
 start_date = datetime.date(2020, 1, 1)
 end_date = datetime.date.today()
